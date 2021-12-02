@@ -35,7 +35,45 @@ body{
     justify-content: space-between;
     font-family: 'Space Grotesk', sans-serif;
 }
-
+.navbar-toggler{
+    background: red;
+}
+.burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+}
+.burger::before{
+    content: "";
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: 1s all;
+}
+.burger::after{
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: 1s all;
+}
+.burger span{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: white;
+    left: 0;
+    top: 9px;
+    transition: 1s all;
+}
 form .btn {
     border: 2px solid white;
     background: none;
@@ -508,9 +546,15 @@ form .btn:hover {
     .carousel-inner{
         padding-top: 90px;
     }
+    .welcome .button{
+        margin-bottom: 100px;
+    }
 }
 @media (max-width:390px) {
     .center_item{
         margin-left: -20%;
+    }
+    .welcome .button{
+        margin-left: 60px;
     }
 }

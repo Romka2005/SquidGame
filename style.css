@@ -25,17 +25,17 @@ body{
     padding-top: 30px;
 }
 .container{
-    background: url(./img/space.jpg)center no-repeat;
-    background-size: cover;
+    /* background: url(./img/space.jpg)center no-repeat;
+    background-size: cover; */
+    background: rgb(2,0,25);
+    background: linear-gradient(90deg, rgba(2,0,25,1) 0%, rgba(60,9,121,1) 45%, rgba(183,66,255,1) 100%);
 }
 .navbar-collapse{
     display: flex;
     justify-content: space-between;
     font-family: 'Space Grotesk', sans-serif;
 }
-.navbar-light .navbar-nav .nav-item a{
-    color: white;
-}
+
 form .btn {
     border: 2px solid white;
     background: none;
@@ -53,8 +53,13 @@ form .btn:hover {
     width: 100%;
     justify-content: space-around;
 }
+.navbar-light .navbar-nav .nav-item a{
+    color: white;
+    transition: all .5s;
+}
 .navbar-light .navbar-nav .nav-item a:hover{
     color: #d43b81;
+    transform: translateX(20px);
 }
 .welcome{
     width: 100%;
@@ -87,6 +92,7 @@ form .btn:hover {
     margin: 50px 0;
 }
 .welcome .button a{
+    display: inline-block;
     background: #d43b81;
     padding: 10px 30px;
     color: white;
@@ -98,7 +104,9 @@ form .btn:hover {
 .welcome .button a:hover{
     background: #0d152b;
     color: #d43b81;
-
+    padding: 10px 40px;
+    transform: translate(10px, -10px);
+    
 }
 .items_top{
     display: flex;
@@ -185,6 +193,15 @@ form .btn:hover {
     background: #0d152b;
     border-radius: 20px;
     margin: auto;
+    transition: all .5s;
+    transition: .5s;
+}
+.cards .card:hover{
+    -webkit-box-shadow: -26px 31px 20px -10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -26px 31px 20px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: -26px 31px 20px -10px rgba(0, 0, 0, 0.2);
+    transform: translate(20px, -30px);
+
 }
 .cards .card-body{
     text-align: center;
@@ -319,6 +336,7 @@ form .btn:hover {
 }
 .categories a:hover{
     color: #d43b81;
+    transform: translateX(40px);
 }
 .categories .image{
     margin-top: 20px;
@@ -334,6 +352,7 @@ form .btn:hover {
     margin-bottom: 60px;
 }
 .featcategories .button a{
+    display: inline-block;
     color: white;
     background: #d43b81;
     padding: 10px 45px;
@@ -347,6 +366,7 @@ form .btn:hover {
     color: #d43b81;
     background: #0d152b;
     padding: 10px 50px;
+    transform: translate(20px);
 }
 .readyy{
     display: flex;
@@ -422,11 +442,24 @@ form .btn:hover {
     border-radius: 10px;
     transition: all .5s;
     text-decoration: none;
+    margin-top: -100px;
 }
 .contact a:hover{
     color: #d43b81;
     background: #0d152b;
-    padding: 10px 50px;
+    padding: 10px 30px;
+}
+
+.footer{
+    text-align: center;
+    background: #430c81;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+.footer h1{
+    font-size: 30px;
 }
 @media (max-width:1002px){
     .readyy{
@@ -440,6 +473,16 @@ form .btn:hover {
 @media (max-width:1002px) {
     .cards > div{
         padding: 30px;
+    }
+}
+@media (max-width:991px) {
+    .navbar-collapse{
+        display: block;
+        text-align: center;
+    }
+    .navbar-collapse .btn{
+        text-align: center;
+        margin: auto;
     }
 }
 @media (max-width:768px) {

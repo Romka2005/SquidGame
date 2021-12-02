@@ -53,6 +53,9 @@ form .btn:hover {
     width: 100%;
     justify-content: space-around;
 }
+.navbar-light .navbar-nav .nav-item a:hover{
+    color: #d43b81;
+}
 .welcome{
     width: 100%;
 }
@@ -193,7 +196,7 @@ form .btn:hover {
     width: 50px;
     height: 50px;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 13px;
     border-radius: 10px;
 }
 .box_i i{
@@ -203,7 +206,238 @@ form .btn:hover {
     margin-top: 10px;
     color: #972a5b;
 }
-@media (max-width:992px) {
+
+.bestsellers{
+    padding-top: 100px;
+    color: white;
+    
+}
+.bestsellers .title h1{
+    font-size: 50px;
+    font-family: 'GameOfSquids';
+}
+.scroll .card{
+    background: rgb(43,0,83);
+    background: linear-gradient(0deg, rgba(43,0,83,1) 0%, rgba(60,9,121,1) 47%, rgba(142,0,117,1) 100%);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.scroll .card_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+} 
+.scroll .sale{
+    text-align: left;
+    margin: 10px;
+    
+}
+.scroll .sale h1{
+    background: #d43b81;
+    color: white;
+    width: 50px;
+    padding: 8px 0px;
+    font-size: 15px;
+    text-align: center;
+}
+.scroll .image{
+    height: 200px;
+}
+.scroll img{
+    width: 150px;
+
+}
+.scroll .buying a{
+    background: none;
+    color: #972a5b;
+    border: none;
+}
+.scroll .buying a:hover{
+    background: #972a5b;
+    color: white;
+    border: none;
+}
+.scroll{
+    height: 400px;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+.scroll .card{
+    overflow: hidden;
+    margin-right: 15px;
+    transition: all 0.5s;
+    height: 100%;
+}
+.scroll .card:hover{
+    -webkit-box-shadow: 9px 9px 16px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 9px 9px 16px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 9px 9px 16px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+.squidseries{
+    width: 100%;
+    padding-top: 60px;
+}
+.squidseries h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'GameOfSquids';
+}
+.carousel-inner{
+    height: 400px;
+    margin: auto;
+}
+
+.featcategories{
+    width: 100%;
+    padding-top: 60px;
+}
+.featcategories .title h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'GameOfSquids';
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+}
+.categories .text{
+    width: 200px;
+}
+.categories a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    padding-bottom: 10px;
+    transition: all .5s;
+}
+.categories a:hover{
+    color: #d43b81;
+}
+.categories .image{
+    margin-top: 20px;
+}
+.categ{
+    color: white;
+    text-align: center;
+}
+.featcategories .button{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.featcategories .button a{
+    color: white;
+    background: #d43b81;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 10px;
+    transition: all .5s;
+    
+}
+.featcategories .button a:hover{
+    color: #d43b81;
+    background: #0d152b;
+    padding: 10px 50px;
+}
+.readyy{
+    display: flex;
+    justify-content: space-between;
+}
+.ready{
+    background: url(./img/squidimg.jpg)center no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.readymail .text{
+    margin: auto;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.readymail h1{
+    font-weight: 900;
+}
+.readymail h2{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.readymail h3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.readymail .email{
+    padding: 5px 5px;
+    padding-right: 30px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+}
+.readymail .email::placeholder{
+    color: white;
+}
+.readymail .btnsquid{
+    color: white;
+    background: #d43b81;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.readymail .btnsquid:hover{
+    color: #d43b81;
+    background: #0d152b;
+    padding: 7px 35px;
+}
+.ready .image{
+    margin: auto;
+}
+.ready img{
+    width: 100%;
+}
+
+
+.contact .card{
+    text-align: center;
+    background: none;
+    border: none;
+    color: black;
+    margin: auto;
+}
+.contact .button{
+    text-align: center;
+}
+.contact a{
+    color: white;
+    background: #d43b81;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    text-decoration: none;
+}
+.contact a:hover{
+    color: #d43b81;
+    background: #0d152b;
+    padding: 10px 50px;
+}
+@media (max-width:1002px){
+    .readyy{
+        display: block;
+        text-align: center;
+    }
+    .readyy .btnsquid{
+        margin-top: 20px;
+    }
+}
+@media (max-width:1002px) {
     .cards > div{
         padding: 30px;
     }
@@ -224,6 +458,12 @@ form .btn:hover {
     }
     .center_item h1{
         font-size: 70px;
+    }
+    .categories{
+        flex-direction: column;
+    }
+    .carousel-inner{
+        padding-top: 90px;
     }
 }
 @media (max-width:390px) {
